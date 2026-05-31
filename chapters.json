@@ -1,0 +1,32 @@
+[
+    {
+        "id": "official",
+        "name": {
+            "zh-cn": "官方谱面",
+            "en": "Phigros"
+        },
+        "songsListUrls": [
+            "https://ptc.imzfrg.top/api/chapters/phigros"
+        ]
+    },
+    {
+        "id": "pt",
+        "name": {
+            "zh-cn": "PT所有",
+            "en": "PT All"
+        },
+        "songsListUrls": [
+            "https://ptc.realtvop.top/pt_songs.json"
+        ]
+    },
+    {
+        "id": "pt_special",
+        "name": {
+            "zh-cn": "PT特殊",
+            "en": "PT Special"
+        },
+        "songsListUrls": [
+            "https://ptc.realtvop.top/chapters/special.json"
+        ]
+    }
+]
