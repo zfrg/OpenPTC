@@ -19,3 +19,6 @@ This project is based on Tencent EdgeOne Pages to build a dynamic service for ob
 * Inspired from [swordalt/phigros-chart-downloader](https://github.com/swordalt/phigros-chart-downloader.git).
 * The game information is from [RhythmActions/PhigrosActions](https://github.com/RhythmActions/PhigrosActions.git) and all game assets are from [7aGiven/Phigros_Resource](https://github.com/7aGiven/Phigros_Resource.git).
 * Thank very much for the design of [MoeFurina/PTC-pub](https://github.com/MoeFurina/PTC-pub.git).
+
+## License
+This project is under [The MIT License](https://mit-license.org/).
