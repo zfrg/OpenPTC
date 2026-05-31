@@ -1,4 +1,4 @@
-# Phi-PTC
+# OpenPTC
 ## What-is
 This project is based on Tencent EdgeOne Pages to build a dynamic service for obtaining official Phigros charts so that you can deploy your own version of Phitogether that can play the official Phigros charts.
 
