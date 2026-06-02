@@ -24,7 +24,7 @@ def _chaptersPhigros():
             songIllustrator = songInfo["illustrator"]
             songLevels = songInfo["chartDetail"]["level_list"]
             songBPM = 0
-            songID = 'r'+stringToMD5(song)
+            songID = 'r'+stringToMD5(song.split('.0')[0])
             processedChartsInfo = []
             for chartLevel in songLevels:
                 difficulty = songInfo["chartDetail"][chartLevel]["rating"]
@@ -49,9 +49,9 @@ def _chaptersPhigros():
                 "composer": songComposer,
                 "illustrator": songIllustrator,
                 "name": songName,
-                "song": "https://raw.githubusercontent.com/7aGiven/Phigros_Resource/refs/heads/music/"+song.split(".")[0]+song.split(".")[1]+".ogg",
+                "song": "https://raw.githubusercontent.com/7aGiven/Phigros_Resource/refs/heads/music/"+song.split('.0')[0]+".ogg",
                 "edition": "Phigros Official Charts",
-                "illustration": f"https://raw.githubusercontent.com/7aGiven/Phigros_Resource/refs/heads/illustrationLowRes/{sid}.png",
+                "illustration": "https://raw.githubusercontent.com/7aGiven/Phigros_Resource/refs/heads/illustrationLowRes/"+song.split('.0')[0]+".png",
                 "bpm": songBPM,
                 "duration": "",
                 "preview_start": "00:00:00"

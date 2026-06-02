@@ -2,11 +2,11 @@
     {
         "id": "official",
         "name": {
-            "zh-cn": "官方谱面",
-            "en": "Phigros"
+            "zh-cn": "Phigros 官方谱面",
+            "en": "Phigros Official Charts"
         },
         "songsListUrls": [
-            "/api/chapters/phigros"
+            "//example.com/api/chapters/phigros"
         ]
     },
     {
