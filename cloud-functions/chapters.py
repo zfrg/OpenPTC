@@ -11,7 +11,7 @@ def stringToMD5(string):
 
 app = Flask(__name__)
 
-@app.route('/chapters/phigros', methods=['GET'])
+@app.route('/phigros.json', methods=['GET'])
 def _chaptersPhigros():
     try:
         chartsInfoJSON = requests.get("https://raw.githubusercontent.com/RhythmActions/PhigrosActions/refs/heads/main/GameInformation/Modified_Gameinfo.json").json()
@@ -67,7 +67,7 @@ def _chaptersPhigros():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-@app.route('/v', methods=['GET'])
+@app.route('/api/v', methods=['GET'])
 def _ver():
     return requests.get("https://raw.githubusercontent.com/RhythmActions/PhigrosActions/refs/heads/main/status.json").json()['version']
 

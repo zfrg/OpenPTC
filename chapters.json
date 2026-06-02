@@ -6,7 +6,7 @@
             "en": "Phigros Official Charts"
         },
         "songsListUrls": [
-            "//example.com/api/chapters/phigros"
+            "//example.com/chapters/phigros.json"
         ]
     },
     {
