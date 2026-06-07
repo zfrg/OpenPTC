@@ -26,14 +26,15 @@ def _chaptersPhigros():
             songBPM = 0
             songID = 'r'+stringToMD5(song.split('.0')[0])
             processedChartsInfo = []
-            for chartLevel in songLevels:
+            for chartLevelIndex in range(len(songLevels)):
                 difficulty = songInfo["chartDetail"][chartLevel]["rating"]
+                chartLevel = songLevels[chartLevelIndex]
                 try:
                     difficulty = int(float(difficulty))
                 except:
                     pass
                 chartInfo = {
-                    "id": f"{songID}{chartLevel}",
+                    "id": f"{songID}{chartLevelIndex}{chartLevel}",
                     "song": songID,
                     "charter": songInfo["chartDetail"][chartLevel]["charter"],
                     "chart": f"https://raw.githubusercontent.com/7aGiven/Phigros_Resource/refs/heads/chart/{song}/{chartLevel}.json",
